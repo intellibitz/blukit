@@ -1,0 +1,58 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.autonomousapps",
+    "module": "asm-relocated",
+    "version": "9.9.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "shadowRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "shadowed",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "asm-relocated-9.9.0.jar",
+          "url": "asm-relocated-9.9.0.jar",
+          "size": 180169,
+          "sha512": "ae9dfd83f14663aa88dab8141dff8f24a736afc8bc7b94b130cc4349bd7c802fba5b482bb3e0999bd9b635fd41c86b8fb9127eb68ff310d24ab063c18bb9fe06",
+          "sha256": "28366e20e975e695723e83e4407b3143ff04e37580dd04854c0d1963d361964a",
+          "sha1": "80fd03d5383986d28b6f53e8c47ee2909acbaa71",
+          "md5": "e00aba6a7c7c52aa4531799af20cd389"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "asm-relocated-9.9.0-sources.jar",
+          "url": "asm-relocated-9.9.0-sources.jar",
+          "size": 261,
+          "sha512": "1487e5a20c9e4d74f298e07c42e96a61be11b7a768c3fbc199ee138cd68e1fc2267d1cfe3f11f288acc05df755315344d052cc5f6f751f126ab4fe1caa5125ea",
+          "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+          "sha1": "2ad14aed781c4a73ed4dbb421966d408a0a06686",
+          "md5": "f43436d6bec321290f6af228ad602604"
+        }
+      ]
+    }
+  ]
+}

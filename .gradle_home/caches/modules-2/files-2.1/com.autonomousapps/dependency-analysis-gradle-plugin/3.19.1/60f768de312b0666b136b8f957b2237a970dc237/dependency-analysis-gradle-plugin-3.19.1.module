@@ -1,0 +1,439 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.autonomousapps",
+    "module": "dependency-analysis-gradle-plugin",
+    "version": "3.19.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "2.1.21"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.moshi",
+          "module": "moshi",
+          "version": {
+            "requires": "1.15.2"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "dev.zacsweers.moshix",
+          "module": "moshi-sealed-runtime",
+          "version": {
+            "requires": "0.30.0"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "dependency-analysis-gradle-plugin-3.19.1.jar",
+          "url": "dependency-analysis-gradle-plugin-3.19.1.jar",
+          "size": 2191699,
+          "sha512": "269375e5bdd8933dbf52095c7b9b22e324c2bf4c8f4dc290f506d1f7f02e56d6e4b54d8aed8f532a47faf62de52f761a5b693f48472b13f986033092c5b0b27c",
+          "sha256": "75bc3f16db71938fcebb1930c394990aff8897925f949030d306edc7447d3ba8",
+          "sha1": "b5d853de5df1d5d243063d4fdb66dbcb444605fe",
+          "md5": "51ef41835a5fa3873872c2d3b563b15a"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ],
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio-bom",
+          "version": {
+            "requires": "3.15.0"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ],
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "com.autonomousapps",
+          "module": "graph-support",
+          "version": {
+            "requires": "0.12.0"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "com.autonomousapps",
+          "module": "variant-artifacts",
+          "version": {
+            "requires": "0.7.0"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "33.5.0-jre"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "com.autonomousapps",
+          "module": "kotlin-editor-relocated",
+          "version": {
+            "requires": "0.25.0"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.moshi",
+          "module": "moshi-kotlin",
+          "version": {
+            "requires": "1.15.2"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "dev.zacsweers.moshix",
+          "module": "moshi-sealed-reflect",
+          "version": {
+            "requires": "0.30.0"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.okio",
+          "module": "okio",
+          "version": {
+            "requires": "3.15.0"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "com.github.ben-manes.caffeine",
+          "module": "caffeine",
+          "version": {
+            "requires": "3.2.4"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ],
+          "reason": "High performance, concurrent cache"
+        },
+        {
+          "group": "com.autonomousapps",
+          "module": "antlr",
+          "version": {
+            "requires": "4.13.2.2"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "com.autonomousapps",
+          "module": "asm-relocated",
+          "version": {
+            "requires": "9.9.0"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "2.1.21"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "com.squareup.moshi",
+          "module": "moshi",
+          "version": {
+            "requires": "1.15.2"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "dev.zacsweers.moshix",
+          "module": "moshi-sealed-runtime",
+          "version": {
+            "requires": "0.30.0"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "2.1.21"
+          },
+          "excludes": [
+            {
+              "group": "junit",
+              "module": "junit"
+            },
+            {
+              "group": "org.junit.vintage",
+              "module": "junit-vintage-engine"
+            }
+          ],
+          "reason": "For Kotlin ABI analysis"
+        }
+      ],
+      "files": [
+        {
+          "name": "dependency-analysis-gradle-plugin-3.19.1.jar",
+          "url": "dependency-analysis-gradle-plugin-3.19.1.jar",
+          "size": 2191699,
+          "sha512": "269375e5bdd8933dbf52095c7b9b22e324c2bf4c8f4dc290f506d1f7f02e56d6e4b54d8aed8f532a47faf62de52f761a5b693f48472b13f986033092c5b0b27c",
+          "sha256": "75bc3f16db71938fcebb1930c394990aff8897925f949030d306edc7447d3ba8",
+          "sha1": "b5d853de5df1d5d243063d4fdb66dbcb444605fe",
+          "md5": "51ef41835a5fa3873872c2d3b563b15a"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "dependency-analysis-gradle-plugin-3.19.1-sources.jar",
+          "url": "dependency-analysis-gradle-plugin-3.19.1-sources.jar",
+          "size": 349472,
+          "sha512": "359dee7145cf2cab00920031767c276c5ffb9796a29ad13386bd4f6a1db1bbd3b75739a7d789a203cec381c53478b76091ddee9a74d3f5d9ae5dcb1a924fa572",
+          "sha256": "7cb69af6e42bff037bd7ff952669254b97bda3a6de5ef5f70b44deb515e57f04",
+          "sha1": "57ac9df8f5e6bbb677b5f005cd92252f29521771",
+          "md5": "1e785626368e6f625331aa4a9e245602"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "dependency-analysis-gradle-plugin-3.19.1-javadoc.jar",
+          "url": "dependency-analysis-gradle-plugin-3.19.1-javadoc.jar",
+          "size": 261,
+          "sha512": "1487e5a20c9e4d74f298e07c42e96a61be11b7a768c3fbc199ee138cd68e1fc2267d1cfe3f11f288acc05df755315344d052cc5f6f751f126ab4fe1caa5125ea",
+          "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+          "sha1": "2ad14aed781c4a73ed4dbb421966d408a0a06686",
+          "md5": "f43436d6bec321290f6af228ad602604"
+        }
+      ]
+    }
+  ]
+}
